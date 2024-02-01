@@ -1,10 +1,12 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { CampaignDetails, CreateCampaign, Home, Profile } from './Pages';
+import HomeNavbar from './components/HomeNavbar';
 
 export default function App() {
     return (
         <div>
+            <HomeNavbar></HomeNavbar>
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/profile' element={<Profile />} />
