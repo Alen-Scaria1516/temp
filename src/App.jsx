@@ -6,7 +6,7 @@ import HomeNavbar from './components/HomeNavbar';
 export default function App() {
     return (
         <div>
-            <HomeNavbar></HomeNavbar>
+            
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/profile' element={<Profile />} />
