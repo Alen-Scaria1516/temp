@@ -3,7 +3,7 @@ import React, { useContext, createContext } from "react";
 import {
   useAddress,
   useContract,
-  metamaskWallet,
+  useMetamask,
   useContractWrite,
 } from "@thirdweb-dev/react";
 
@@ -24,8 +24,8 @@ export const StateContextProvider = ({ children }) => {
   );
 
   const address = useAddress();
-  const connect = metamaskWallet();
-  //console.log(contract);
+  const connect = useMetamask();
+  console.log(connect);
 
   // const publishCampaign = async (form) => {
   //   try {

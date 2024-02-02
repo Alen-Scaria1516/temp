@@ -5,16 +5,17 @@ import { useStateContext } from '../context';
 import { Sidebar, Navbar } from '../components';
 
 const Profile = () => {
+    
     const [isLoading, setIsLoading] = useState(false);
     const [campaigns, setCampaigns] = useState([]);
 
-    const { address, contract, getUserCampaigns } = useStateContext();
+    const { address, contract, getCampaigns } = useStateContext();
 
     console.log(address)
 
     const fetchCampaigns = async () => {
         setIsLoading(true);
-        const data = await getUserCampaigns();
+        const data = await getCampaigns();
         setCampaigns(data);
         setIsLoading(false);
     }

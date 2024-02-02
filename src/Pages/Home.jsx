@@ -1,13 +1,15 @@
 import React from 'react';
-import About from '../components/About';
-import HomeNavbar from '../components/HomeNavbar';
+import { About, HomeNavbar } from '../components';
+
 
 function Home() {
     return (
-        <>
-            <HomeNavbar/>
+        <div className="h-full w-full relative">
+            <img src={'./Image/Greenwashing.png'} className="w-full h-auto object-cover
+             absolute mix-blend-overlay"/>
+            <HomeNavbar />
             <About />
-        </>
+        </div>
     );
 }
 

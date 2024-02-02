@@ -11,6 +11,7 @@ const Navbar = () => {
   const [isActive, setIsActive] = useState('dashboard');
   const [toggleDrawer, setToggleDrawer] = useState(false);
   const { connect, address } = useStateContext();
+  console.log(connect)
 
   return (
     <div className="flex md:flex-row flex-col-reverse justify-between mb-[35px] gap-6">
@@ -28,7 +29,7 @@ const Navbar = () => {
           title={address ? 'Back to main page' : 'Home'}
           styles={address ? 'bg-[#1dc071]' : 'bg-[#8c6dfd]'}
           handleClick={() => {
-            if (address) navigate('profile')
+            if (address) navigate('/profile')
             else connect()
           }}
         />
@@ -38,7 +39,7 @@ const Navbar = () => {
           title={address ? 'Create a campaign' : 'Connect'}
           styles={address ? 'bg-[#1dc071]' : 'bg-[#8c6dfd]'}
           handleClick={() => {
-            if (address) navigate('create-campaign')
+            if (address) navigate('/create-campaign')
             else connect()
           }}
         />

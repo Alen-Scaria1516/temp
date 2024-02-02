@@ -2,11 +2,9 @@ import React from "react";
 
 function About() {
     return (
-        <div className="h-full w-full relative">
-            <img src={'./Image/Greenwashing.png'} className="w-full h-auto object-cover
-             absolute mix-blend-overlay"/>
-            <div className="p-4">
-                <h1 className="flex justify-center text-color-2 font-semibold text-6xl">
+        <>
+            <div className="p-2 md:p-10 md:py-24">
+                <h1 className="flex justify-center text-color-5 opacity-100 font-semibold text-6xl ">
                     Greenwashing
                 </h1>
                 <p className="text-gray-200 text-color-5 text-xl text-center">
@@ -15,7 +13,7 @@ function About() {
                     reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
                 </p>
             </div>
-        </div>
+        </>
     )
 }
 

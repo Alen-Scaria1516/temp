@@ -13,7 +13,10 @@ export default {
       'color-4': '#B2C582',
       'color-5': '#D5DDDF',
       'color-6': '#C9D6DF',
-      'color-7': '#F5F1DE'
+      'color-7': '#F5F1DE',
+      'black': '#000000',
+      'color-8': 'rgb(71 85 105);',
+      
     },
     extend: {},
   },
