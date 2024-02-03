@@ -14,7 +14,7 @@ import loader from './loader.svg';
 import thirdweb from './thirdweb.png';
 import img1 from '../assets/image1.avif';
 import img2 from '../assets/img2.png';
-
+import img3 from '../assets/img3.png';
 export {
   tagType,
   createCampaign,
@@ -31,5 +31,6 @@ export {
   loader,
   thirdweb,
   img1,
-  img2
+  img2,
+  img3,
 };

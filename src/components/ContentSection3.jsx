@@ -1,8 +1,10 @@
-const ContentSection = ({img,heading,para}) => {
+
+
+const ContentSection3 = ({img,heading,para}) => {
     return ( 
-        <div className='w-full  px-4'> 
+        <div className='w-full px-4 py-10'> 
             <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>   
-                <img className='w-[300px] mx-auto  my-4' src={img}  alt='/' /> 
+                <img className='w-[400px] mx-auto  my-4' src={img}  alt='/' /> 
                 <div className='flex flex-col justify-center text-center md:text-left'>
                     <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-4'>{heading}</h1>
                     <p>{para} </p>
@@ -12,4 +14,4 @@ const ContentSection = ({img,heading,para}) => {
     );
 }
 
-export default ContentSection;
+export default ContentSection3;
